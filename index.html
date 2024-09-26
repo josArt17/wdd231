@@ -6,25 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Jose Angel Arteaga - WDD231">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home-page.css">
+    <link rel="stylesheet" href="styles/home-page-large.css">
     <script src="scripts/main.js" defer></script>
     <title>Home</title>
 </head>
 <body>
 <header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Chambre</a></li>
-            <li><a href="#">Github Profile</a></li>
-            <li><a href="#">LinkedIn</a></li>
+    <div class="cont-pic-name">
+        <div class="cont-pic">
+            <img src="images/1725561504558.jpg" alt="my profile picture">
+        </div>
+        <div class="cont-name">
+            <h1>Jose Angel Arteaga</h1>
+        </div>
+    </div>
+    <nav class="navigation" id="navigation">
+        <ul class="large-menu">
+            <li><a href="#" class="page-button menu-active">Home</a></li>
+            <li><a href="#" class="page-button">Chamber</a></li>
+            <li><a href="#" class="page-button">Github Profile</a></li>
+            <li><a href="#" class="page-button">LinkedIn</a></li>
         </ul>
     </nav>
+    <div class="cont-button-menu">
+        <button id="menu"></button>
+    </div>
 </header>
 <main>
+    <section>
+        <div class="cont-main-title">
+            <h2>Course Work</h2>
+        </div>
+        <div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="cont-main-title">
+            <h2>Toloria, Madagascar</h2>
+        </div>
+        <div class="cont-img-country">
+            <img src="https://picsum.photos/100/100" alt="a random picture">
+        </div>
+    </section>
+    <section>
+        <div class="cont-main-title">
+            <h2>Web and Computer Programming Certificate</h2>
+        </div>
+        <div class="cont-buttons">
+            <button id="all">All</button>
+            <button id="cse">CSE</button>
+            <button id="wdd">WDD</button>
+        </div>
+        <hr>
+        <div id="cont-courses">
+
+        </div>
+        <div id="total-credits">
+
+        </div>
+    </section>
 
 </main>
 <footer>
-
+    <p><span id="currentYear"></span> Jose Angel Arteaga - México</p>
+    <p id="lastModified"></p>
 </footer>
 </body>
 </html>

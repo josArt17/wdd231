@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="Website"/>
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2018/05/22/23/40/tampico-3422875_1280.jpg">
+    <meta property="og:url" content="https://josart17.github.io/wdd231/">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    <script src="scripts/directory.js" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="cont-pic-name">
+            <div class="cont-pic">
+                <img src="images/picture-svgrepo-com.svg" alt="icon of web page">
+            </div>
+            <div class="cont-name">
+                <h1>Timbuktu</h1>
+                <p>Chamber of Comerce</p>
+            </div>
+        </div>
+        <nav class="navigation" id="navigation">
+            <ul class="large-menu">
+                <li><a href="#" class="page-button menu-active">Home</a></li>
+                <li><a href="#" class="page-button">Directory</a></li>
+                <li><a href="#" class="page-button">Join</a></li>
+                <li><a href="#" class="page-button">Discover</a></li>
+            </ul>
+        </nav>
+        <div class="cont-button-menu">
+            <span class="button-bw"><img src="images/dark-mode-svgrepo-com.svg" alt="dark mode button"></span>
+            <button id="menu"></button>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div class="cont-main-img">
+                <picture>
+                    <source media="(min-width:650px)" srcset="https://via.assets.so/img.jpg?w=1200&h=900&tc=#000000&bg=#BFD5D9">
+                    <img src="https://via.assets.so/img.jpg?w=400&h=150&tc=#000000&bg=#BFD5D9&t=x" alt="">
+                </picture>
+            </div>
+            <div class="button-ticktes">
+                <button>Keynote Tickets</button>
+            </div>
+        </div>
+        <section class="cont-home">
+            <h2>Home</h2>
+            <div class="cont-events-items">
+                <div class="cont-events">
+                    <div class="cont-title-item">
+                        <h3>Events</h3>
+                    </div>
+                </div>
+                <div class="cont-cweather">
+                    <div class="cont-title-item">
+                        <h3>Current Weather</h3>
+                    </div>
+                    <div class="cont-weather-data">
+                        <div>
+                            <img src="images/cloudy.png" alt="">
+                        </div>
+                        <div>
+                            <p><span>75°</span> F</p>
+                            <p>Party Cloudy</p>
+                            <p>High: 85°</p>
+                            <p>Low: 52°</p>
+                            <p>Humidity: 34%</p>
+                            <p>Sunrise: 7:30am</p>
+                            <p>Sunset: 9:59pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont-wforecast">
+                    <div class="cont-title-item">
+                        <h3>Weather Forecast</h3>
+                    </div>
+                    <div class="cont-data-forecast">
+                        <p>Today: <span>90°F</span></p>
+                        <p>Wednesday: <span>89°F</span></p>
+                        <p>Thursday: <span>68°F</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cont-cards">
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <span>Timbuktu Chamber of Commerce</span>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+        <div class="cont-footer-social">
+            <div><img src="images/youtube.png" alt=""></div>
+            <div><img src="images/twitter.png" alt=""></div>
+            <div><img src="images/linkedin.png" alt=""></div>
+        </div>
+        <div class="cont-info-mine">
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>Jose Angel Arteaga</p>
+            </div>
+            <p><span id="currentYear"></span> Timbuktu Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>    
+</body>
+</html>

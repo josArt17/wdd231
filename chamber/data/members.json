@@ -5,8 +5,8 @@
     "phone_number": "+1-555-123-4567",
     "email": "johndoe@example.com",
     "website_url": "https://www.johndoe.com",
-    "image_file_name": "johndoe.jpg",
-    "membership_level": 1
+    "image_file_name": "images/johndoe.jpg",
+    "membership_level": "Bronze"
   },
   {
     "name": "Jane Smith",
@@ -14,8 +14,8 @@
     "phone_number": "+1-555-987-6543",
     "email": "janesmith@example.com",
     "website_url": "https://www.janesmith.com",
-    "image_file_name": "janesmith.png",
-    "membership_level": 2
+    "image_file_name": "images/janesmith.jpg",
+    "membership_level": "Silver"
   },
   {
     "name": "Mike Johnson",
@@ -23,8 +23,8 @@
     "phone_number": "+1-555-234-5678",
     "email": "mikejohnson@example.com",
     "website_url": "https://www.mikejohnson.com",
-    "image_file_name": "mikejohnson.jpg",
-    "membership_level": 3
+    "image_file_name": "images/mikejohnson.jpg",
+    "membership_level": "Gold"
   },
   {
     "name": "Emily Davis",
@@ -32,8 +32,8 @@
     "phone_number": "+1-555-345-6789",
     "email": "emilydavis@example.com",
     "website_url": "https://www.emilydavis.com",
-    "image_file_name": "emilydavis.png",
-    "membership_level": 1
+    "image_file_name": "images/emilydavis.jpg",
+    "membership_level": "Bronze"
   },
   {
     "name": "Robert Lee",
@@ -41,8 +41,8 @@
     "phone_number": "+1-555-456-7890",
     "email": "robertlee@example.com",
     "website_url": "https://www.robertlee.com",
-    "image_file_name": "robertlee.jpg",
-    "membership_level": 3
+    "image_file_name": "images/robertlee.jpg",
+    "membership_level": "Gold"
   },
   {
     "name": "Sarah Wilson",
@@ -50,8 +50,8 @@
     "phone_number": "+1-555-567-8901",
     "email": "sarahwilson@example.com",
     "website_url": "https://www.sarahwilson.com",
-    "image_file_name": "sarahwilson.png",
-    "membership_level": 2
+    "image_file_name": "images/sarahwilson.jpg",
+    "membership_level": "Silver"
   },
   {
     "name": "David Brown",
@@ -59,7 +59,7 @@
     "phone_number": "+1-555-678-9012",
     "email": "davidbrown@example.com",
     "website_url": "https://www.davidbrown.com",
-    "image_file_name": "davidbrown.jpg",
-    "membership_level": 1
+    "image_file_name": "images/davidbrown.jpg",
+    "membership_level": "Bronze"
   }
 ]

@@ -1,0 +1,222 @@
+@media (min-width: 650px) {
+    header {
+		height: 12rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+
+	.cont-pic-name {
+		height: 100%;
+		width: 50%;
+	}
+
+	.cont-pic {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.cont-pic img {
+		width: 100%;
+		height: 50%;
+	}
+
+	.cont-name h1 {
+		font-size: 4rem;
+	}
+
+    .cont-name p {
+        font-size: 1.2rem;
+    }
+
+	.navigation {
+        position: static;
+        height: 2rem; 
+        width: 50%; 
+        overflow: visible;
+        margin-left: 20rem;
+	}
+
+	.navigation ul {
+        display: flex;
+		justify-content: center;
+        width: auto;
+		height: 100%;
+        margin: .5rem auto;
+        text-align: left;
+        opacity: 1;
+    }
+
+	.navigation ul li {
+        margin-bottom: 0;
+        list-style: none; 
+    }
+
+    .navigation ul li a {
+        color: #000; 
+        text-decoration: none;
+        font-size: 1.6rem; 
+        font-weight: 400; 
+        padding: 1rem;
+    }
+
+    .navigation ul li a:hover {
+        text-underline-offset: 10px;
+        text-decoration: underline;
+    }
+
+
+	#menu {
+		display: none; 
+	}
+
+    .cont-button-menu {
+        width: 30%;
+        height: 3.2rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-left: -9rem;
+    }
+    
+    .button-bw {
+        width: 50%;
+        height: 100%;
+    }
+
+    .cont-main-img {
+        position: relative;
+        width: 90%;
+        height: 20rem;
+        margin: auto;
+    }
+    
+    .cont-main-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text-action {
+        position: absolute;
+        top: 17rem;
+        left: 7rem;
+    }
+
+    .text-action h2 {
+        font-size: 7rem;
+        color: #fff;
+        -webkit-text-stroke: 0.1rem #000;
+    }
+    
+    .button-ticktes {
+        position: absolute;
+        right: 6rem;
+        top: 25rem;
+    }
+
+    .button-ticktes button {
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .button-ticktes button:hover {
+        cursor: pointer;
+        background-color: yellowgreen;
+        color: #000;
+        transition: 0.2s;
+    }
+
+    .cont-home {
+        width: 85%;
+        margin: 2rem auto;
+    }
+
+    .cont-events-items {
+        margin-top: 1rem;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .cont-events {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .cont-cweather {
+        width: 100%;
+        height: 100%;
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .cont-title-item {
+        text-align: start;
+    }
+
+    .cont-title-item h3 {
+        margin-left: 10px;
+    }
+
+    .cont-weather-data div p {
+        font-size: 1rem;
+    }
+
+    .cont-wforecast {
+        width: 100%;
+        height: 100%;
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+
+    .cont-data-forecast {
+        font-size: 1.7rem;
+    }
+
+    #cont-cards {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: auto;
+    }
+
+    #cont-cards section {
+        width: 30%;
+    }
+
+    .footer {
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    .footer div {
+        width: 30%;
+    }
+
+    .cont-footer-social div {
+        width: 20%;
+    }
+
+    .cont-info-mine {
+        text-align: start;
+    }
+
+}

@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    margin-top: .5rem;
+    padding: .8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+}
+
+.cont-pic-name {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.cont-button-menu {
+    width: 30%;
+    height: 3.2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.button-bw {
+    width: 50%;
+    height: 100%;
+}
+
+.button-bw img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont-pic {
+    width: 50%;
+    height: 100%;
+}
+
+.cont-pic img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.cont-name {
+    width: 75%;
+    text-align: center;
+}
+
+.cont-name h1 {
+    font-size: 2rem;
+}
+
+.cont-name p {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+#menu {
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+#menu::before {
+	content: "☰";
+    font-size: 2.3rem;
+}
+
+.navigation {
+    background-color: gray;
+    height: 0;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.navigation.active {
+    height: 50%;
+}
+
+.navigation ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.navigation.active ul {
+    opacity: 1;
+}
+
+.navigation ul li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.navigation ul li .menu-active {
+    color: gold;
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cont-main-img {
+    position: relative;
+}
+
+.cont-main-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.text-action {
+    position: absolute;
+    top: 13rem;
+    left: 1rem;
+}
+
+.text-action h2 {
+    font-size: 5rem;
+    color: yellow;
+    -webkit-text-stroke: 0.2rem #000;
+}
+
+.button-ticktes {
+    position: absolute;
+    right: 20px;
+    top: 25rem;
+}
+
+.button-ticktes button {
+    width: 8rem;
+    height: 2rem;
+    background-color: gray;
+    border: none;
+    border-radius: .5rem;
+}
+
+.cont-home {
+    width: 95%;
+    margin: auto;
+}
+
+.cont-home h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
+
+.cont-events-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cont-events {
+    width: 100%;
+    height: 20rem;
+    background-color: gray;
+}
+
+.cont-title-item{
+    background-color: #000;
+    height: 3rem;
+    text-align: center;
+}
+
+.cont-title-item h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #D9E7E6;
+}
+
+.cont-cweather {
+    width: 100%;
+    height: 20rem;
+    background-color: gray;
+}
+
+
+.cont-wforecast {
+    width: 100%;
+    height: 15rem;
+    background-color: gray;
+}
+
+.cont-weather-data {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cont-weather-data div {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+
+.cont-weather-data div img {
+    width: 6rem;
+}
+
+.cont-weather-data div p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.cont-weather-data div p span {
+    font-weight: bold;
+}
+
+.cont-data-forecast {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.cont-data-forecast span {
+    font-weight: bold;
+}
+
+.cont-info-card {
+    width: 95%;
+    background-color: gray;
+    text-align: center;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+.cont-name-info {
+    border-bottom: 1px solid #000;
+}
+
+.cont-img-data {
+    display: flex;
+    align-items: center;
+}
+
+.cont-img-data div {
+    padding: 10px;
+}
+
+.cont-img-data div img {
+    width: 120px;
+    height: 120px;
+}
+
+.cont-data-info {
+    text-align: left;
+    font-size: .7rem;
+    font-weight: 400;
+}
+
+.cont-data-info span {
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    background-color: #D9E7E6;
+}
+
+footer div span {
+    font-weight: bold;
+}
+
+.cont-footer-social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cont-footer-social div {
+    width: 20%;
+    margin-top: 1rem;
+    background-color: grey;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.cont-footer-social div img {
+    width: 100%;
+}
+
+.cont-info-mine {
+    margin-top: 1rem;
+}

@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    margin-top: .5rem;
+    padding: .8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+}
+
+.cont-pic-name {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.cont-button-menu {
+    width: 30%;
+    height: 3.2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.button-bw {
+    width: 50%;
+    height: 100%;
+}
+
+.button-bw img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont-pic {
+    width: 50%;
+    height: 100%;
+}
+
+.cont-pic img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.cont-name {
+    width: 75%;
+    text-align: center;
+}
+
+.cont-name h1 {
+    font-size: 2rem;
+}
+
+.cont-name p {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+#menu {
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+#menu::before {
+	content: "☰";
+    font-size: 2.3rem;
+}
+
+.navigation {
+    background-color: gray;
+    height: 0;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.navigation.active {
+    height: 50%;
+}
+
+.navigation ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.navigation.active ul {
+    opacity: 1;
+}
+
+.navigation ul li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.navigation ul li .menu-active {
+    color: gold;
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Init of main code */
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem auto;
+}
+
+.cont-form {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.cont-form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cont-form form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 4rem;
+}
+
+.cont-form form div input, select {
+    width: 20rem;
+    height: 2.3rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cont-form form div textarea {
+    width: 20rem;
+}
+
+#submitButton {
+    width: 15rem;
+    height: 2.3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cont-button-level {
+    width: 100%;
+    text-align: center;
+    margin-top:2rem;
+}
+
+.cont-button-level div {
+    margin: 2rem auto;
+    width: 80%;
+    height: 6rem;
+    background-color: #6782A2;
+    margin-bottom: 1rem;
+    border-radius: .3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    animation: glow 3s infinite; /* Animación de brillo */
+}
+
+.cont-button-level div p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.cont-button-level div button {
+    width: 7rem;
+    height: 2rem;
+}
+
+@keyframes glow {
+    0% {
+        background-color: #6782A2;
+        box-shadow: 0 0 5px #6782A2;
+    }
+    25% {
+        background-color: #8197B1;
+        box-shadow: 0 0 20px #8197B1, 0 0 30px #8197B1;
+    }
+    50% {
+        background-color: #9AABC1;
+        box-shadow: 0 0 20px #9AABC1, 0 0 30px #9AABC1;
+    }
+    100% {
+        background-color: #6782A2;
+        box-shadow: 0 0 5px #6782A2;
+    }
+}
+
+dialog {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.containerButtonClose {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerButtonClose button {
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: .2rem;
+}
+
+.containerButtonClose button:hover {
+    cursor: pointer;
+}
+
+/* Finish of main code */
+
+footer {
+    width: 100%;
+    background-color: #D9E7E6;
+}
+
+footer div span {
+    font-weight: bold;
+}
+
+.cont-footer-social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cont-footer-social div {
+    width: 20%;
+    margin-top: 1rem;
+    background-color: grey;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.cont-footer-social div img {
+    width: 100%;
+}
+
+.cont-info-mine {
+    margin-top: 1rem;
+}

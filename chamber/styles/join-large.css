@@ -1,0 +1,191 @@
+@media (min-width: 650px) {
+    header {
+		height: 12rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+
+	.cont-pic-name {
+		height: 100%;
+		width: 50%;
+	}
+
+	.cont-pic {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.cont-pic img {
+		width: 100%;
+		height: 50%;
+	}
+
+	.cont-name h1 {
+		font-size: 4rem;
+	}
+
+    .cont-name p {
+        font-size: 1.2rem;
+    }
+
+	.navigation {
+        position: static;
+        height: 2rem; 
+        width: 50%; 
+        overflow: visible;
+        margin-left: 20rem;
+	}
+
+	.navigation ul {
+        display: flex;
+		justify-content: center;
+        width: auto;
+		height: 100%;
+        margin: .5rem auto;
+        text-align: left;
+        opacity: 1;
+    }
+
+	.navigation ul li {
+        margin-bottom: 0;
+        list-style: none; 
+    }
+
+    .navigation ul li a {
+        color: #000; 
+        text-decoration: none;
+        font-size: 1.6rem; 
+        font-weight: 400; 
+        padding: 1rem;
+    }
+
+    .navigation ul li a:hover {
+        text-underline-offset: 10px;
+        text-decoration: underline;
+    }
+
+
+	#menu {
+		display: none; 
+	}
+
+    .cont-button-menu {
+        width: 30%;
+        height: 3.2rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-left: -9rem;
+    }
+    
+    .button-bw {
+        width: 50%;
+        height: 100%;
+    }
+
+    /* INIT MAIN CODE */
+
+    main {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin: 3rem auto;
+        flex-direction: row;
+    }
+
+    .cont-form {
+        width: 50%;
+    }
+
+    .cont-form form {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .cont-form form div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cont-form form div input, select {
+        width: 20rem;
+        height: 2.3rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .cont-form form div textarea {
+        width: 20rem;
+        height: 10rem;
+        font-size: 1.5rem;
+    }
+
+    #submitButton {
+        width: 15rem;
+        height: 2.3rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .cont-button-level {
+        width: 50%;
+    }
+
+    .cont-button-level div {
+        width: 80%;
+        height: 6rem;
+        background-color: gray;
+        margin-bottom: 1rem;
+        border-radius: .3rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .cont-button-level div p {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .cont-button-level div button {
+        width: 7rem;
+        height: 2rem;
+    }
+
+    /* FINISH MAIN CODE */
+
+    .footer {
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    .footer div {
+        width: 30%;
+    }
+
+    .cont-footer-social div {
+        width: 20%;
+    }
+
+    .cont-info-mine {
+        text-align: start;
+    }
+
+}

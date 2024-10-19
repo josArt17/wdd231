@@ -1,0 +1,46 @@
+{
+    "membership_levels": {
+      "nonProfit": {
+        "name": "Non-Profit",
+        "cost": 0,
+        "benefits": [
+          "Access to basic events",
+          "Newsletter subscription",
+          "Discount on select services"
+        ]
+      },
+      "bronze": {
+        "name": "Bronze",
+        "cost": 200,
+        "benefits": [
+          "All NP Membership benefits",
+          "Access to all events",
+          "Company name listed on chamber directory",
+          "Discount on event fees"
+        ]
+      },
+      "silver": {
+        "name": "Silver",
+        "cost": 500,
+        "benefits": [
+          "All Bronze Membership benefits",
+          "Opportunity to participate in special events",
+          "Advertising space on chamber's newsletter",
+          "Free training sessions",
+          "Spotlight position on chamber directory"
+        ]
+      },
+      "gold": {
+        "name": "Gold",
+        "cost": 1000,
+        "benefits": [
+          "All Silver Membership benefits",
+          "Premium advertising on homepage",
+          "Sponsorship opportunities at major events",
+          "VIP invitations to exclusive networking events",
+          "Custom business consulting sessions"
+        ]
+      }
+    }
+  }
+  

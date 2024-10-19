@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="images/logo-chamber.webp">
+    <meta property="og:url" content="https://josart17.github.io/wdd231/">
+    <meta name="description" content="We are the camber of commerce of Timbuktu, join us for more information">
+    <meta name="author" content="Jose Angel Arteaga - WDD231">
+    <link rel="icon" href="images/logo-chamber.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <title>Join to us</title>
+</head>
+<body>
+    <header>
+        <div class="cont-pic-name">
+            <div class="cont-pic">
+                <img src="images/logo-chamber.webp" alt="icon of web page">
+            </div>
+            <div class="cont-name">
+                <h1>Timbuktu</h1>
+                <p>Chamber of Comerce</p>
+            </div>
+        </div>
+        <nav class="navigation" id="navigation">
+            <ul class="large-menu">
+                <li><a href="index.html" class="page-button">Home</a></li>
+                <li><a href="#" class="page-button">Directory</a></li>
+                <li><a href="join.html" class="page-button menu-active">Join</a></li>
+                <li><a href="#" class="page-button">Discover</a></li>
+            </ul>
+        </nav>
+        <div class="cont-button-menu">
+            <span class="button-bw"><img src="images/dark-mode-svgrepo-com.svg" alt="dark mode button"></span>
+            <button id="menu"></button>
+        </div>
+    </header>
+    <main>
+        <div class="cont-form">
+            <h2>Membership Application Form</h2>
+            <form action="thankyou.html" method="get">
+                <div>
+                    <label for="name">Your name</label>
+                    <input type="text" name="name" id="name" title="First name" autocomplete="given-name" placeholder="John" required>
+                </div>
+                <div>
+                    <label for="lastname">Your lastname</label>
+                    <input type="text" name="lastname" id="lastname" title="Last name" autocomplete="family-name" placeholder="Doe" required>
+                </div>
+                <div>
+                    <label for="orgtitle">Organization title</label>
+                    <input type="text" name="orgtitle" id="orgtitle" title="Organization title" autocomplete="organization-title" placeholder="CEO"
+                    pattern="[A-Za-z-\s]{7,}" required>
+                </div>
+                <div>
+                    <label for="email">Your email</label>
+                    <input type="email" name="email" id="email" title="Email" autocomplete="email" placeholder="john_doe@email.com" required>
+                </div>
+                <div>
+                    <label for="number">Telephone number</label>
+                    <input type="tel" name="number" id="number" title="Mobile Phone" autocomplete="tel" required>
+                </div>
+                <div>
+                    <label for="org-name">Business/organization's name</label>
+                    <input type="text" name="org-name" id="org-name" title="Organization Name" autocomplete="organization" required>
+                </div>
+                <div>
+                    <label for="level">Membership level</label>
+                    <select name="level" id="level" title="Membership Level" required>
+                        <option value="value selected" selected disabled>Select one option</option>
+                        <option value="No payment">No payment</option>
+                        <option value="Bronze Membership">Bronze</option>
+                        <option value="Silver Membership">Silver</option>
+                        <option value="Gold Membership">Gold</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="business-description">Business/organization's description</label>
+                    <textarea name="business-description" id="business-description" title="Organization Description"></textarea>
+                </div>
+                <div>
+                    <input type="hidden" id="timestamp" name="timestamp">
+                </div>
+                <input type="submit" value="Submit" id="submitButton">
+            </form>
+        </div>
+        <div class="cont-button-level">
+            <h2>Membership Levels</h2>
+            <div>
+                <p>Non Profit Membership Level</p>
+                <button id="nonProfit" value="nonProfit">Learn More</button>
+            </div>
+            <div>
+                <p>Bronze Membership Level</p>
+                <button id="bronze" value="bronze">Learn More</button>
+            </div>
+            <div>
+                <p>Silver Membership Level</p>
+                <button id="silver" value="silver">Learn More</button>
+            </div>
+            <div>
+                <p>Gold Membership Level</p>
+                <button id="gold" value="gold">Learn More</button>
+            </div>
+        </div>
+        <dialog id="membership-details" aria-labelledby="membership-title" aria-modal="true"></dialog>
+    </main>
+    <footer class="footer">
+        <div>
+            <span>Timbuktu Chamber of Commerce</span>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+        <div class="cont-footer-social">
+            <div><img src="images/youtube.png" alt=""></div>
+            <div><img src="images/twitter.png" alt=""></div>
+            <div><img src="images/linkedin.png" alt=""></div>
+        </div>
+        <div class="cont-info-mine">
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>Jose Angel Arteaga</p>
+            </div>
+            <p><span id="currentYear"></span> Timbuktu Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>    
+</body>
+</html>

@@ -44,8 +44,8 @@ async function getDataWeather() {
     const dayAfterTomorrow = document.querySelector('#dayAfterTomorrow');
 
     const todayDate = new Date();
-    const tomorrowDate = todayDate.getDay()+1;
-    const dayAfterTomorrowDate = todayDate.getDay()+2;
+    const tomorrowDate = todayDate.getUTCDay()+1;
+    const dayAfterTomorrowDate = todayDate.getUTCDay()+2;
 
 
     const dataWeatherToday = [];
@@ -59,7 +59,7 @@ async function getDataWeather() {
             throw new Error('Network response was not ok ' + response.statusText);
         }
         const data = await response.json();
-        //console.log(data);
+        console.log(data);
 
         let sunriseData = data.city.sunrise;
         let sunrise24 = convertTo24(sunriseData);
@@ -99,7 +99,7 @@ async function getDataWeather() {
             let tempForDay = element.main.temp;
             dateFormat = new Date(date);
 
-            if (dateFormat.getDay() === todayDate.getDay()) {
+            if (dateFormat.getDay() === todayDate.getUTCDay()) {
                 dataWeatherToday.push(tempForDay);
             } if (dateFormat.getDay() === tomorrowDate) {
                 dataWeatherTomorrow.push(tempForDay);
@@ -128,11 +128,11 @@ async function getData() {
 const displayCards = (datas) => {
     const premiumCards = datas.filter(data => data.membership_level === "Gold" || data.membership_level === "Silver");
     
-    const regularCards = datas.filter(data => data.membership_level == "Bronze");
 
-    const allCards = [...premiumCards, ...regularCards];
+    const shuffledCards = premiumCards.sort(() => 0.5 - Math.random());
+    const selectedCards = shuffledCards.slice(0, 3);
 
-    allCards.forEach((data) => {
+    selectedCards.forEach((data) => {
         let card = document.createElement('section');
         card.classList.add('cont-info-card');
         let contNameinfo = document.createElement('div');

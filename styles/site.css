@@ -1,0 +1,64 @@
+:root {
+    --nav-bg: #264653;
+    --main-bg: #d8e2dc;
+    --headings: #2a9d8f;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.primary {
+    background-color: var(--nav-bg);
+    color: #fff;
+    text-align: center;
+    height: 3rem;
+    width: 10rem;
+}
+
+.secondary {
+    background-color: var(--main-bg);
+    text-align: center;
+    height: 3rem;
+    width: 10rem;
+}
+
+.accent {
+    background-color: var(--headings);
+    text-align: center;
+    height: 3rem;
+    width: 10rem;
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    width: 90%;
+    border-radius: .5rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: .5rem .5rem .5rem .5rem rgba(0, 0, 0, .09);
+}

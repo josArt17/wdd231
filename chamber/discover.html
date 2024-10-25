@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-large.css">
     <script src="scripts/directory.js" defer></script>
-    <title>Home</title>
+    <title>Discover</title>
 </head>
 <body>
     <header>
@@ -26,9 +26,9 @@
         <nav class="navigation" id="navigation">
             <ul class="large-menu">
                 <li><a href="index.html" class="page-button">Home</a></li>
-                <li><a href="directory.html" class="page-button menu-active">Directory</a></li>
+                <li><a href="directory.html" class="page-button">Directory</a></li>
                 <li><a href="join.html" class="page-button">Join</a></li>
-                <li><a href="discover.html" class="page-button">Discover</a></li>
+                <li><a href="discover.html" class="page-button menu-active">Discover</a></li>
             </ul>
         </nav>
         <div class="cont-button-menu">
@@ -37,58 +37,18 @@
         </div>
     </header>
     <main>
-        <div>
+        <section id="visit-message" class="sidebar-message"></section>
+        <section class="sect-main">
+            <div class="sidebar" id="sidebar">
+            </div>
             <div class="cont-main-img">
-                <picture>
-                    <source media="(min-width:650px)" srcset="https://via.assets.so/img.jpg?w=1200&h=900&tc=#000000&bg=#BFD5D9">
-                    <img src="https://via.assets.so/img.jpg?w=400&h=150&tc=#000000&bg=#BFD5D9&t=x" alt="">
-                </picture>
+                <img src="images/ny-img.jpg" alt="Picture from New York" loading="lazy">
+                <img src="images/liberty-statue.jpg" alt="Picture from Liberty statue" loading="lazy">
+                <img src="images/las-vegas.jpg" alt="Picture from las vegas" loading="lazy">
+                <img src="images/great-canyon.jpg" alt="Picture from great canyon" loading="lazy">
+                <img src="images/utah-rock.jpg" alt="Picture from Utah" loading="lazy">
+                <img src="images/chicago.jpg" alt="Picture from Chicago" loading="lazy">
             </div>
-            <div class="button-ticktes">
-                <button>Keynote Tickets</button>
-            </div>
-        </div>
-        <section class="cont-home">
-            <h2>Home</h2>
-            <div class="cont-events-items">
-                <div class="cont-events">
-                    <div class="cont-title-item">
-                        <h3>Events</h3>
-                    </div>
-                </div>
-                <div class="cont-cweather">
-                    <div class="cont-title-item">
-                        <h3>Current Weather</h3>
-                    </div>
-                    <div class="cont-weather-data">
-                        <div>
-                            <img src="images/cloudy.png" alt="">
-                        </div>
-                        <div>
-                            <p><span>75°</span> F</p>
-                            <p>Party Cloudy</p>
-                            <p>High: 85°</p>
-                            <p>Low: 52°</p>
-                            <p>Humidity: 34%</p>
-                            <p>Sunrise: 7:30am</p>
-                            <p>Sunset: 9:59pm</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cont-wforecast">
-                    <div class="cont-title-item">
-                        <h3>Weather Forecast</h3>
-                    </div>
-                    <div class="cont-data-forecast">
-                        <p>Today: <span>90°F</span></p>
-                        <p>Wednesday: <span>89°F</span></p>
-                        <p>Thursday: <span>68°F</span></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="cont-cards">
-
         </section>
     </main>
     <footer class="footer">

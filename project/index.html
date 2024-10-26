@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/TrendStream.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
     <script src="scripts/main.js" defer></script>
     <script src="https://kit.fontawesome.com/3bcbb0a983.js" crossorigin="anonymous"></script>
     <title>TrendStream - Catalog of best series and movies</title>
@@ -17,7 +18,7 @@
                 <div class="container-logo-nav" id="container-logo-nav">
                     <img src="images/TrendStream.png" alt="TrendStream logo">
                     <ul>
-                        <li><a href="#">Random</a></li>
+                        <li><a href="index.html">Random</a></li>
                         <li><a href="#">Series</a></li>
                         <li><a href="#">Movies</a></li>
                     </ul>
@@ -28,24 +29,25 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main">
         <section>
-            <h1>Welcome to a new selection</h1>
+            <h1>Click on the button to get random Series recomendation</h1>
         </section>
         <section>
-            <button>Random series</button>
+            <button id="random-serie">Random series</button>
         </section>
+        <div id="container-data"></div>
+        <dialog id="serie-details" aria-labelledby="serie-details" aria-modal="true"></dialog>
     </main>
     <footer class="footer">
         <div>
             <p><span id="currentYear"></span> Jose Angel Arteaga - México</p>
-            <p id="lastModified"></p>
         </div>
         <div>
             <ul>
-                <li><i class="fa-brands fa-facebook-f"></i></li>
-                <li><i class="fa-brands fa-linkedin"></i></li>
-                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><a href="https://www.facebook.com/jose.arteagamachuca1" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://mx.linkedin.com/in/jos%C3%A9-angel-arteaga-603272241" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/josart1296/profilecard/?igsh=eXlrcm16YXByMXd3" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
         </div>
     </footer>

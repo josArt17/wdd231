@@ -1,20 +1,14 @@
 const buttonMenu = document.querySelector('#menu-burguer');
 const navMenu = document.querySelector('#container-logo-nav');
 const inputSearch = document.querySelector('#title');
-const url = 'https://api.themoviedb.org/3/trending/tv/day';
-const buttonSerie = document.querySelector('#random-serie');
+const url = 'https://api.themoviedb.org/3/movie/popular';
 const containerData = document.querySelector('#container-data');
 
 const descriptionSeries = [];
 
 inputSearch-addEventListener('keyup', function(){
-    let url = 'https://api.themoviedb.org/3/search/tv';
+    let url = 'https://api.themoviedb.org/3/search/movie';
     renderInputData(url, inputSearch.value);
-});
-
-buttonSerie.addEventListener('click', function() {
-    inputSearch.value = '';
-    renderData(url);
 });
 
 buttonMenu.addEventListener('click', function() {
@@ -55,7 +49,7 @@ const renderData = async (url) => {
             imgSerie.setAttribute('src', `${linkImg}${sourceImg}`);
             imgSerie.setAttribute('loading', 'lazy');
 
-            titleSerie.textContent = data.name;
+            titleSerie.textContent = data.title;
 
             detailsButton.textContent = 'Details';
             detailsButton.setAttribute('id', id);
@@ -114,7 +108,7 @@ const renderInputData = async (url, value) => {
             imgSerie.setAttribute('src', `${linkImg}${sourceImg}`);
             imgSerie.setAttribute('loading', 'lazy');
 
-            titleSerie.textContent = data.name;
+            titleSerie.textContent = data.title;
 
             detailsButton.textContent = 'Details';
             detailsButton.setAttribute('id', id);
@@ -194,7 +188,6 @@ const showModal = (value) => {
     });
 }
 
-
 window.addEventListener('load', function() {
     const lastVisit = localStorage.getItem('lastVisit');
     const messageContainer = document.querySelector('#welcome-message');
@@ -207,3 +200,5 @@ window.addEventListener('load', function() {
     }
     localStorage.setItem('lastVisit', new Date());
 });
+
+renderData(url);

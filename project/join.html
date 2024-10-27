@@ -3,16 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="TrendStream library of content">
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="images/TrendStream.png">
-    <meta property="og:url" content="https://josart17.github.io/wdd231/project/">
-    <meta name="description" content="We provid information of content to people and give them options to watch">
-    <meta name="author" content="Jose Angel Arteaga - WDD231">
-    <link rel="icon" href="images/TrendStream.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/TrendStream.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/main-large.css">
-    <script src="scripts/main.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <script src="https://kit.fontawesome.com/3bcbb0a983.js" crossorigin="anonymous"></script>
     <title>TrendStream - Catalog of best series and movies</title>
 </head>
@@ -24,27 +18,36 @@
                 <div class="container-logo-nav" id="container-logo-nav">
                     <img src="images/TrendStream.png" alt="TrendStream logo">
                     <ul>
-                        <li class="tagActive"><a href="index.html">Random</a></li>
+                        <li><a href="index.html">Random</a></li>
                         <li><a href="series.html">Series</a></li>
                         <li><a href="movies.html">Movies</a></li>
-                        <li><a href="join.html">Join Us</a></li>
+                        <li class="tagActive"><a href="join.html">Join Us</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="secundary-nav-container">
-                <input type="search" name="title" id="title" placeholder="Search">
             </div>
         </nav>
     </header>
     <main class="main">
         <section>
-            <h1>Click on the button to get random Series recomendation</h1>
+            <h1>Join to us and receive recomendations of new series and movies</h1>
         </section>
-        <section>
-            <button id="random-serie">Random series</button>
+        <section class="cont-form">
+            <form action="thankyou.html" method="get" class="form">
+                <div>
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name" id="first-name" title="First name" autocomplete="given-name" required>
+                </div>
+                <div>
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name" title="Last name" autocomplete="family-name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" title="Email" autocomplete="email" required>
+                </div>
+                <input type="submit" value="Submit" class="submit">
+            </form>
         </section>
-        <div id="container-data"></div>
-        <dialog id="serie-details" aria-labelledby="serie-details" aria-modal="true"></dialog>
     </main>
     <footer class="footer">
         <div>

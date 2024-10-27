@@ -2,7 +2,6 @@ const buttonMenu = document.querySelector('#menu-burguer');
 const navMenu = document.querySelector('#container-logo-nav');
 const inputSearch = document.querySelector('#title');
 const url = 'https://api.themoviedb.org/3/trending/tv/day';
-const buttonSerie = document.querySelector('#random-serie');
 const containerData = document.querySelector('#container-data');
 
 const descriptionSeries = [];
@@ -10,11 +9,6 @@ const descriptionSeries = [];
 inputSearch-addEventListener('keyup', function(){
     let url = 'https://api.themoviedb.org/3/search/tv';
     renderInputData(url, inputSearch.value);
-});
-
-buttonSerie.addEventListener('click', function() {
-    inputSearch.value = '';
-    renderData(url);
 });
 
 buttonMenu.addEventListener('click', function() {
@@ -194,7 +188,6 @@ const showModal = (value) => {
     });
 }
 
-
 window.addEventListener('load', function() {
     const lastVisit = localStorage.getItem('lastVisit');
     const messageContainer = document.querySelector('#welcome-message');
@@ -207,3 +200,5 @@ window.addEventListener('load', function() {
     }
     localStorage.setItem('lastVisit', new Date());
 });
+
+renderData(url);
